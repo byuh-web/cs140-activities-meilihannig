@@ -1,0 +1,33 @@
+header h1 {
+    color:rgb(14, 45, 111);
+    font-size: 32;
+}
+
+header {
+    background-color: rgba(110, 187, 255, 0.338);
+}
+
+main h2 {
+    color: rgb(20, 8, 160);
+}
+
+main h3 {
+    color: rgb(0, 119, 255);
+}
+
+nav a {
+    color: rgba(3, 81, 115, 0.733);
+}
+
+body {
+    background-color: rgba(127, 251, 255, 0.369);
+}
+
+.emphasize {
+  color: #1f4fd8;
+  font-weight: bold;
+}
+
+.deemphasize {
+  color: #888888;
+}
