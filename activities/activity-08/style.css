@@ -1,3 +1,58 @@
 li {
     list-style-image: url('Witch.png');
 }
+
+.home  {
+    background-image: url('Salem_Customs_House.jpg'),url('EnteringSalem.jpg');
+    background-repeat: repeat-x, no-repeat;  
+    background-position: bottom left, right;
+    padding-bottom: 60px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;  
+    color: #791212;                 
+    margin: 10px;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #9c875a;  
+    padding: 10px;               
+    text-align: center;          
+}
+
+nav {
+    background-color: #b9a885; 
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #333333; 
+    text-align: center;
+}
+    
+nav a.active {
+    color: #000000;   /* pick any color you want */
+    font-weight: bold; /* optional */
+    
+}
+
+footer {
+    background-color: #6d601e4c;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color: #420c0c; 
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    color: #420c0c; 
+    text-align: center;
+    font-weight: bold;
+}
