@@ -1,9 +1,9 @@
 li {
-    list-style-image: url('Witch.png');
+    list-style-image: url('imagesSalem/Witch.png');
 }
 
 .home  {
-    background-image: url('Salem_Customs_House.jpg'),url('EnteringSalem.jpg');
+    background-image: url('imagesSalem/Salem_Customs_House.jpg'),url('imagesSalem/EnteringSalem.jpg');
     background-repeat: repeat-x, no-repeat;  
     background-position: bottom left, right;
     padding-bottom: 60px;
