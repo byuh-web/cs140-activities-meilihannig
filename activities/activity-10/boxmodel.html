@@ -3,36 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Box Model</title>
+    <title>Art Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     
-    <header> <h1>CSS Box Model</h1> 
+    <header> 
+        <h1>Art</h1> 
 
         <nav> 
-            <p> <a href="https://byuh-web.github.io/cs140-activities-meilihannig/">External Site</a> </p>
-            <p> <a href="../activity-03/partner-check.html">Internal Page</a> </p>
-            <p> <a href="#pageEnd">Navigate to End</a> </p>
+            <p> 
+                <a href="https://byuh-web.github.io/cs140-activities-meilihannig/">External Site</a> 
+
+                <a href="../activity-03/partner-check.html">Internal Page</a>
+
+                <a href="#pageEnd">Navigate to End</a> 
+            </p>
         </nav>
 
     </header>
 
     <main> 
+        <h2>Woodcarvings</h2>
+
+        <figure id="pic"> 
+            <img src="images/WoodenP.jpg" alt="Woodcarvings">
+            <figcaption class="caption"> Woodcarvings I created while working at the Polynesian Cultural Center</figcaption>
+        </figure>
+
         <section class="box-one">
-            <h2>Box Model Example One</h2>
-            <p>This box uses pixels and a solid border.</p>
-        </section>
+            <h2> This is some of the Woodcarvings I've created. I worked at the Polynesian Cultural Center and learned how to carve wood. It was an amazing experience.</h2>
+         </section>
 
-        <section class="box-two">
-            <h2>Box Model Example Two</h2>
-            <p>This box uses rem units and a dashed border.</p>
-        </section>
+         <h3>What is normal flow in HTML?</h3>
+         <p>Normal flow in HTML refers to the default behavior of elements in a document. Elements are laid out in the order they appear in the HTML source code, and they flow from left to right and top to bottom. This is the standard layout behavior that occurs when no CSS is applied to change it.</p>
 
+         <h3>What does float do? Why do you need to clear the float?</h3>
+         <p>The float property in CSS is used to position an element to the left or right of its container, allowing other elements to wrap around it. When an element is floated, it is taken out of the normal document flow and positioned within its parent container. To clear a float, you use the clear property in CSS, which ensures that subsequent elements are not affected by the floated element. This prevents layout issues and maintains proper document flow.</p>
+
+        <h3>What do absolute, fixed, and relative do?</h3>
+        <p>Relative positioning moves an element relative to its normal position in the document flow. Absolute positioning moves an element relative to its nearest positioned ancestor (or the initial containing block if no ancestor is positioned). Fixed positioning moves an element relative to the viewport, so it stays in place even when scrolling.</p>
+
+        <h3>How can you make nice navigation buttons for mobile devices?</h3>
+        <p>To make nice navigation buttons for mobile devices, you can use CSS media queries to adjust the layout and styling based on screen size. Consider using touch-friendly button sizes, clear visual hierarchy, and responsive design principles. Ensure that buttons are easily tappable on small screens and that the navigation is intuitive and accessible.</p>
+
+        <h3>Where can you find videos to review what we talked about in class?</h3>
+        <p>In Canvas and the online course materials.</p>
     </main>
 
-    <footer id="pageEnd"> </footer> 
+    <footer id="pageEnd"> 
+        <p> &copy; 2026 Mei-Li Hannig</p>
+    </footer> 
     
 </body>
 
