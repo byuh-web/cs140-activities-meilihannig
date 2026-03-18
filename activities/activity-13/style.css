@@ -1,0 +1,128 @@
+/* ==============================
+   MOBILE FIRST BASE STYLES
+   ============================== */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header container */
+header {
+    background-color: #463025; 
+    color: white;
+    padding: 10px;
+}
+
+/* Title box */
+header h1 {
+    background-color: #7b5f4a; 
+    padding: 10px;
+    margin: 0 0 10px 0; /* space below title */
+    text-align: center;
+}
+
+/* Navigation box */
+.nav {
+    background-color: #ae9582; 
+    padding: 10px;
+}
+
+/* Navigation list (vertical for mobile) */
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column; /* required vertical menu */
+}
+
+/* Nav items spacing */
+.nav li {
+    margin: 5px 0;
+}
+
+/* Nav links */
+.nav a {
+    color: rgb(45, 40, 32);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* Hover effect for links */
+.nav a:hover {
+    background-color: #D2B48C; /* tan highlight */
+    color: #5C4033; /* dark brown text */
+}
+
+/* Main spacing */
+main {
+    padding: 10px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Responsive images */
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* ==============================
+   TABLET STYLES
+   ============================== */
+@media (min-width: 600px) {
+
+    /* Horizontal navigation */
+    .nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav li {
+        margin: 0 10px;
+    }
+
+    /* Two-column layout */
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    section {
+        flex: 1 1 45%;
+    }
+}
+
+/* ==============================
+   DESKTOP STYLES
+   ============================== */
+@media (min-width: 1024px) {
+
+    /* Align header content left */
+    header h1 {
+        text-align: left;
+    }
+
+    .nav ul {
+        justify-content: flex-start;
+    }
+
+    /* Three-column layout */
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    section {
+        flex: 1 1 30%;
+    }
+}
