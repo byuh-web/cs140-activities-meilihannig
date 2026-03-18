@@ -36,6 +36,7 @@ header h1 {
 
     display: flex;
     flex-direction: column; /* required vertical menu */
+    text-align: center;
 }
 
 /* Nav items spacing */
@@ -106,23 +107,48 @@ section img {
    ============================== */
 @media (min-width: 1024px) {
 
-    /* Align header content left */
-    header h1 {
-        text-align: left;
+    /* Header layout */
+    header {
+        text-align: center; /* centers title and nav */
+        padding: 20px;
     }
 
+    /* Center navigation links horizontally */
     .nav ul {
-        justify-content: flex-start;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* centers nav links */
+        align-items: center;
     }
 
-    /* Three-column layout */
+    .nav li {
+        margin: 0 15px; /* space between links */
+    }
+
+    /* Main layout */
     main {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
     }
 
-    section {
+    /* About section full width and centered */
+    #about {
+        flex: 1 1 100%;
+        text-align: center; /* centers text */
+    }
+
+    /* Center the About image */
+    #about img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Three-column layout for remaining sections */
+    #mother,
+    #father,
+    #myself {
         flex: 1 1 30%;
     }
 }
