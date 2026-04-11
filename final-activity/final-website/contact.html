@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+<header><h1>Contact</h1></header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="skills.html">Skills</a>
+  <a href="certifications.html">Certifications</a>
+  <a href="classwork.html">Classwork</a>
+  <a href="internship.html">Internship</a>
+  <a class="active" href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+  <p>Contact me below.</p>
+
+  <form action="confirm.php" method="POST" onsubmit="return validateForm()">
+
+    Name:<br>
+    <input type="text" name="name" required><br><br>
+
+    Email:<br>
+    <input type="text" id="email" name="email" required><br><br>
+
+    Interest:<br>
+    <input type="text" name="interest"><br><br>
+
+    Message:<br>
+    <textarea name="message" required></textarea><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<footer><p>&copy; 2026 Mei-Li Hannig</p></footer>
+
+</body>
+</html>
