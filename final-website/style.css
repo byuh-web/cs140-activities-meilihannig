@@ -37,12 +37,18 @@ nav a:hover {
 }
 
 .container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
   padding: 20px;
 }
 
 img {
-  max-width: 300px;
-  margin-top: 10px;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin: 15px 0;
+  border-radius: 5px;
 }
 
 footer {
@@ -70,12 +76,23 @@ th, td {
 
 /* MOBILE */
 @media (max-width: 768px) {
+
   nav {
     flex-direction: column;
+    width: 100%;
   }
 
   nav a {
+    display: block;
+    width: 100%;
+    padding: 15px;
     border-top: 1px solid #444;
     text-align: center;
   }
+
+  .container {
+    margin: 10px;
+    padding: 15px;
+  }
+
 }
