@@ -37,7 +37,13 @@
   <input type="text" id="email" name="email" required>
 
   <label for="interest">Topic</label>
-  <input type="text" id="interest" name="interest">
+  <select id="interest" name="interest" required>
+    <option value="">Select a topic</option>
+    <option value="general">General Inquiry</option>
+    <option value="collaboration">Collaboration Opportunity</option>
+    <option value="feedback">Feedback on Portfolio</option>
+    <option value="other">Other</option>
+  </select>
 
   <label for="message">Message</label>
   <textarea id="message" name="message" required></textarea>
